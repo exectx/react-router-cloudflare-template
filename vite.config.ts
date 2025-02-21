@@ -1,9 +1,10 @@
-import autoprefixer from "autoprefixer";
-import tailwindcss from "tailwindcss";
+// import autoprefixer from "autoprefixer";
+// import tailwindcss from "tailwindcss";
 import tsconfigPaths from "vite-tsconfig-paths";
 import { reactRouter } from "@react-router/dev/vite";
 import { defineConfig } from "vite";
 import { cloudflare } from "@cloudflare/vite-plugin";
+import tailwindcss from "@tailwindcss/vite";
 
 // By default react-router's dev server uses Node.js, so we want to remove their server
 // configuration to use the dev server provided by Vite + Workerd.
@@ -14,12 +15,12 @@ const reactRouterPlugin = reactRouterPlugins.find(
 reactRouterPlugin.configureServer = undefined;
 
 export default defineConfig({
-  css: {
-    postcss: {
-      plugins: [tailwindcss, autoprefixer],
-    },
-  },
-  plugins: [cloudflare(), reactRouterPlugins, tsconfigPaths()],
+  // css: {
+  //   postcss: {
+  //     plugins: [tailwindcss, autoprefixer],
+  //   },
+  // },
+  plugins: [cloudflare(), reactRouterPlugins, tailwindcss(), tsconfigPaths()],
   ssr: {
     resolve: {
       conditions: ["workerd", "worker", "browser"],

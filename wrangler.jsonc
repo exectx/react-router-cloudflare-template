@@ -3,18 +3,17 @@
  * https://developers.cloudflare.com/workers/wrangler/configuration/
  */
 {
-	"$schema": "node_modules/wrangler/config-schema.json",
-	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "react-router-cloudflare",
-	"compatibility_date": "2024-11-01",
-	"main": "./server.ts",
-	"assets": {
-		"directory": "./dist/client"
-	},
-	"observability": {
-		"enabled": true
-	},
-	"upload_source_maps": true
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "react-router-cloudflare",
+  "compatibility_date": "2024-11-01",
+  "main": "./server.ts",
+  "assets": {
+    "directory": "./dist/client"
+  },
+  "observability": {
+    "enabled": true
+  },
+  "upload_source_maps": true
   /**
    * Smart Placement
    * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
