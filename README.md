@@ -1,5 +1,8 @@
 # Welcome to React Router + Cloudflare Workers!
 
+> [!NOTE]
+> This is a modifed [template](https://github.com/cloudflare/templates/tree/main/react-router-starter-template) from cloudflare + tailwind v4
+
 ![React Router Starter Template Preview](https://imagedelivery.net/wSMYJvS3Xw-n339CbDyDIA/bfdc2f85-e5c9-4c92-128b-3a6711249800/public)
 
 <!-- dash-content-start -->
@@ -23,7 +26,7 @@ A modern, production-ready template for building full-stack React applications u
 Outside of this repo, you can start a new project with this template using [C3](https://developers.cloudflare.com/pages/get-started/c3/) (the `create-cloudflare` CLI):
 
 ```bash
-npm create cloudflare@latest -- --template=cloudflare/templates/react-router-starter-template
+npm create cloudflare@latest -- --template=exectx/react-router-cloudflare-template
 ```
 
 A live public deployment of this template is available at [https://react-router-starter-template.templates.workers.dev](https://react-router-starter-template.templates.workers.dev)
